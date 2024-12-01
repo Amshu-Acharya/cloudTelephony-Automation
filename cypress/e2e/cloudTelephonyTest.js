@@ -1,12 +1,15 @@
+//Import makes tests modular and reusable by centralizing page actions and selectors in their respective classes.
 import LoginPage from '../../support/pages/LoginPage';
 import CallPage from '../../support/pages/CallPage';
 import testData from '../../fixtures/testData.json';
 
+//The describe block defines a test suite for the Telephony App Automation
 describe('Telephony App login and call flow ', () => {
-  const loginPage = new LoginPage();
+  const loginPage = new LoginPage(); //Instances of LoginPage and CallPage are created for accessing their methods
   const callPage = new CallPage();
 
 //to visit url everytime before performing any steps
+  //beforeEach hook ensures each test starts with a fresh visit to the app's base URL
   beforeEach(() => {
     cy.visit('https://your-telephony-app-url.com');
   });
