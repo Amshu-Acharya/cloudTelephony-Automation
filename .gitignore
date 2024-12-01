@@ -1,0 +1,27 @@
+# Ignore the Cypress downloads folder
+cypress/downloads/
+
+# Ignore the Cypress screenshots folder
+cypress/screenshots/
+
+# Ignore the Cypress videos folder
+cypress/videos/
+
+# Ignore environment configuration files
+cypress.env.json
+
+# Ignore reports or logs (if generated during testing)
+cypress/reports/
+cypress/logs/
+
+# Node modules
+node_modules/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
